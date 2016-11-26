@@ -14,7 +14,7 @@ const routes=[
 ]
 const router=new VueRouter({
 	routes,
-	linkActiveClass:'animated bounceIn'
+	linkActiveClass:'animated bounceIn'  // 配置linkActiveClass
 })
 new Vue({
   el: '#app',
