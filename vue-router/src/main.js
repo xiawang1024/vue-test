@@ -3,14 +3,14 @@ import App from './App'
 import VueRouter from 'vue-router'
 
 import Home from './components/Home'
-import LinkA from './components/Link'
-import About from './components/About'
+import Book from './components/Book'
+import Shopping from './components/Shopping'
 /* eslint-disable no-new */
 Vue.use(VueRouter)
 const routes=[
 	{path:'/home',component:Home},
-	{path:'/link',component:LinkA},
-	{path:'/about',component:About}
+	{path:'/book',component:Book},
+	{path:'/shopping',component:Shopping}
 ]
 const router=new VueRouter({
 	routes,
@@ -19,7 +19,7 @@ const router=new VueRouter({
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App, Home, LinkA, About },
+  components: { App, Home, Book, Shopping },
   router
 })
 router.push({path:'home'})
