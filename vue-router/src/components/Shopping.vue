@@ -49,7 +49,6 @@
         <!-- <p>{{checkname}}</p> -->
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -61,7 +60,7 @@
         //模拟数据
         goods:[
         {
-          'imgUrl':'./shopping/1.jpg',
+          'imgUrl':'shopping/1.jpg',
           'title':'月盛斋酱牛肉清真食品卤熟牛肉五香真空香辣红烧牛肉北京特产包邮',
           'guige':'口味：五香酱牛肉200g',
           'danjia':'32',
@@ -69,7 +68,7 @@
           'jine':'32'
         },
         {
-          'imgUrl':'./shopping/2.jpg',
+          'imgUrl':'shopping/2.jpg',
           'title':'布艺沙发小户型宜家现代简约客厅家具双三人组合可拆洗布沙发特价',
           'guige':'几人位：三人位（豪华版）',
           'danjia':'1222',
@@ -77,7 +76,7 @@
           'jine':'1222'
         },
         {
-          'imgUrl':'./shopping/3.jpg',
+          'imgUrl':'shopping/3.jpg',
           'title':'心韵实木擀面杖和面棍擀面棒擀饺子皮擀面条压面棍擀面棍厨房烘焙',
           'guige':'颜色分类：榉木长30cm直径3cm',
           'danjia':'22',
@@ -85,7 +84,7 @@
           'jine':'22' 
         },
         {
-          'imgUrl':'./shopping/4.jpg',
+          'imgUrl':'shopping/4.jpg',
           'title':'匠中匠绿檀木梳子檀香便携细齿直发梳整木防静电梳礼盒刻字送女友',
           'guige':'颜色分类：绿檀9-5宽齿',
           'danjia':'59',

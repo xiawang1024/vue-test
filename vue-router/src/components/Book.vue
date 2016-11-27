@@ -10,7 +10,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="book of books ">
+            <tr v-for="book of orderBooks">
               <td v-text="book.id"></td>
               <td v-text="book.name"></td>
               <td v-text="book.author"></td>
@@ -134,9 +134,9 @@
           }
           return result;
         },
-        // 'books':function(){
-        //   return _.orderBy(this.books,['name']);
-        // }
+        orderBooks:function(){
+        	return _.orderBy(this.books,this.sortKey);
+        }
       }
   }
 </script>

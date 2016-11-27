@@ -21,7 +21,7 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <transition name="bounce">
+    <transition name="fade">
       <router-view></router-view>
     </transition>
   </div>
