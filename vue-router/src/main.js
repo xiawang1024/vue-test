@@ -22,4 +22,4 @@ new Vue({
   components: { App, Home, Book, Shopping },
   router
 })
-router.push({path:'home'})
+router.push({path:'/home'})
