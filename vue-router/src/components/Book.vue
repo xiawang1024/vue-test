@@ -20,8 +20,8 @@
           </tbody>
           <tfoot>
             <tr>
-              <td>总价：</td>
-              <td colspan="4" v-text="sum"></td><!-- 总价 -->
+              <td>总价（元）：</td>
+              <td colspan="4" v-text="sum" class="zongjia"></td><!-- 总价 -->
             </tr>
           </tfoot>
         </table>
@@ -144,4 +144,5 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   th{text-align:center;}
+  .zongjia{text-align:left;color:red;font-size:16px;font-weight:700;}
 </style>
