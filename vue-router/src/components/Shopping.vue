@@ -46,7 +46,7 @@
             </tr>
           </tfoot>
         </table>
-        <!-- <p>{{checkname}}</p> -->
+       <!-- <p>{{checkname}}</p> -->
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@
       return {
         //模拟数据
         goods:[
-        {
+        {	
           'imgUrl':'shopping/1.jpg',
           'title':'月盛斋酱牛肉清真食品卤熟牛肉五香真空香辣红烧牛肉北京特产包邮',
           'guige':'口味：五香酱牛肉200g',
@@ -146,18 +146,16 @@
       },
       computed:{
         totalPrice:function(){
-          var total=0,len=this.goods.length;
-          for(var i=0;i<len;i++){
-            total+=Number(this.goods[i].jine);
+        	let total=0;
+        	let len=this.checkname.length;
+          for(let i=0;i<len;i++){
+          	total+=Number(this.goods[this.checkname[i]].jine);
           }
           return String(total.toFixed(1));//保留一位小数
         },
         totalCount:function(){
-          var total=0,len=this.goods.length;
-          for(var i=0;i<len;i++){
-            total+=Number(this.goods[i].shuliang);
-          }
-          return String(total);
+          let len=this.checkname.length;
+          return String(len);
         }
       }
   }
