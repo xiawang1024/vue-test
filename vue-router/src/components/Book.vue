@@ -10,12 +10,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="book of orderBooks">
+            <tr v-for="(book,index) of orderBooks">
               <td v-text="book.id"></td>
               <td v-text="book.name"></td>
               <td v-text="book.author"></td>
               <td v-text="book.price"></td>
-              <td><button class="btn btn-danger btn-sm" @click="removeBook($index)">删除</button></td>
+              <td><button class="btn btn-danger btn-sm" @click="removeBook(index)">删除</button></td>
             </tr>
           </tbody>
           <tfoot>
@@ -143,21 +143,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
-    font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
+  th{text-align:center;}
 </style>
