@@ -23,3 +23,6 @@ new Vue({
   router
 })
 router.push({path:'/home'})
+
+
+

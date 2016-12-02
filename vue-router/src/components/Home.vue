@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import Bus from '../bus.js'
 export default {
   name: 'home',
   data () {
@@ -13,6 +14,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

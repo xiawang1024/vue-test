@@ -10,7 +10,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#" @click="hello">Brand</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -28,14 +28,22 @@
 </template>
 
 <script>
+import Bus from '../bus.js'
   export default {
     name: 'head',
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
       }
+    },
+    methods:{
+      hello:function(){
+        Bus.$emit("test",'event bus');
+      }
     }
   }
+
+ 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
