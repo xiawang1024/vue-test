@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 @click="getDom" class="title">{{ msg }}</h1>
 
   </div>
 </template>
@@ -20,6 +20,11 @@
         console.log(this)
         that.msg=data
       })
+    },
+    methods:{
+      getDom:function(){
+        console.log(this.$el.querySelector('.title'))
+      }
     }
   }
 </script>
